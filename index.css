@@ -13,7 +13,7 @@ a{
   text-decoration: none;
   color: black;
 }
-h2{
+h1{
   color: #E6A756;
   font-size: 54px;
   font-weight: 100;
@@ -53,11 +53,11 @@ main{
 }
 
 .titulo{
-  padding: 2em 0;
-  max-width: 40%;
+text-align: center; 
+max-width: 40%;
 }
 
-.titulo h2{
+.titulo h1{
   text-align: right;
 }
 
@@ -79,7 +79,6 @@ main{
 }
 
 .btns{
-  position: top;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -328,31 +327,37 @@ footer{
     max-width: 100%;
   }
   
-  .titulo h2{
-    padding-left: 0;
-  }
+.titulo h1{
+  text-align: center;  }
   
   .titulo p{
      font-size: 20px;
   }
 
-
   .titulo .btns-box{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 90%;
+  
+    margin: auto;
+  
+    min-width: 350px;
+    max-width: 350px;
   }
   
-  .btns{
-    margin: 10px;
-  }
 
+  .btns a{
+   
+    padding: 0.5em 0;
+    margin: 0;
+  }
+  
+ 
   main img{
     width: 90%;
     height: auto;
-    
   }
+    
 /* Sobre */
 
 section p{
@@ -393,12 +398,21 @@ section p{
   align-items: center;
 }
 
+/* Contato */
+
+.box{
+  min-width: 350px;
+}
+
+/* Biografia */
 .biografia-background{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 3em;
+  padding-bottom: 0;
+
 }
 
 
@@ -410,9 +424,9 @@ section p{
 }
 
 .biografia{
-  width: 500px;
+  width: 100%;
   background-color: #ffffff;
-  padding: 100px;
+  padding: 300px 0px;
   font-size: 15px;
 }
 
@@ -427,14 +441,17 @@ section p{
   font-weight: bold;
   font-size: 28px;
 }
-.biografia p:last-child{
-  font-weight: bold;
-  color: #6D604E;
-}
 
 .biografia p{
   padding: 25px;
   line-height: 2em;
+}
+
+.biografia a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 }
