@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+  }
+  body{
+    background-color: #424242;
+    color: white;
   }
   a{
     color: black;
@@ -51,6 +56,22 @@
     padding: 1em;
   }
 
+  .btn-venda{
+    
+    background-color: #d35003;
+    font-size: 25px;
+
+    padding: 1em;
+    margin-top: 1em;
+
+    transition: 1s;
+  }
+
+  .btn-venda:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+  }
+
   section h3{
       padding: 0 4em;
       text-align: center;
@@ -62,10 +83,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center ;
+
+    padding: 2em;
+    
   }
 
   article h2{
-    padding: 2em 0;
+    color: white;
+    font-weight: 100;
   }
 
   .apresenta{
@@ -76,23 +101,30 @@
   } 
 
   .apresenta .text{
-    text-align: center;
+    text-align: left;
+    line-height: 2em;
+    font-size: 13px;
+    margin-left: 2em ;
   }
 /* Metodo de Vendas */
   .mtd-vendas{
    margin: auto;
-    text-align: center;
-    width: 80%;;
+  text-align: center;
+  width: 80%;;
   }
 
-  .mtd-vendas h3, h4{
-    padding: 3em 0;
+  .mtd-vendas h3{
+    font-size: 40px;
+    text-decoration: underline 4px #f79007;
+    
+    padding-top: 3em ;
   }
 
-  ul{
-    border: 1px solid red;
-    width: 60%;
-    margin: auto;
+  .mtd-vendas ul{
+    border: 3px dashed gray;
+    margin: 2em auto;
+    padding: .5em 8em;
+    width: 100%;
     text-align: left;
   }
 
@@ -137,12 +169,37 @@
   text-align: center;
   padding: 3em 0;
 }
-
+/* Beneficios */
 .beneficios{
-  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
   margin: auto;
   text-align: left;
 }
+
+.beneficios h3{
+  text-align: center;
+
+  font-size: 42px;
+  font-weight: 100;
+  color: #F79007;
+}
+.beneficios ul{
+  width: 60%;
+}
+.beneficios ul li{
+  padding: 13px 0;
+
+  border-bottom: 2px solid #F79007;
+}
+
+.beneficios ul li:last-child{
+  border: none;
+}
+
 
 /* Compra */
 
@@ -151,22 +208,90 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  width: 90%;
+
+  margin: 6em auto;
   padding: 2em;
-  border:1px solid red ;
+  
+  border: 2px dashed #E6A756 ;
+  border-radius: 14px;
+}
+
+.layout-de-compra h2{
+  font-size: 36px;
+  color: white;
+}
+.layout-de-compra p{
+  padding: .5em;
+}
+
+.layout-de-compra .preco-anterior{
+  opacity: .8;
+  font-size: 20px;
+  text-decoration: line-through solid white;
+}
+
+.layout-de-compra .preco-parcela{
+  font-size: 20px;
+  font-weight: 100;
+
+  padding-top: 0;
+}
+
+.layout-de-compra .preco-atual{
+  font-size: 45px;
+  color: #f79007;
+
+  padding: .5em;
+}
+
+.layout-de-compra .btn-compra{
+  background-color: #f79007;
+  text-align: center;
+  font-size: 25px;
+  
+  max-width: 500px;
+  min-width: 450px;
+
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.layout-de-compra .btn-compra:hover{
+  cursor: pointer;
+
+  opacity: .8;
+}
+.layout-de-compra .preco-avista{
+  font-size: 22px;
+
+}
+
+.layout-de-compra p:last-child{
+  padding: 1em;
+  opacity: .8;
 }
 
 /* Garantia */
 .garantia{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: initial;
   width: 80%;
-  border: 1px solid yellow;
+
   margin: 2em auto;
 }
 
 .garantia .texto-garantia{
   width: 60%;
+  line-height: 2em;
+  text-align: center;
+
+}
+
+.garantia .texto-garantia p{
+  padding: 1em 0;
 }
 
 footer{
