@@ -131,6 +131,18 @@ section p{
   align-items: center;
 }
 
+.img-vendas{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.img-vendas img{
+  padding: 2em;
+}
+
 /* metas atingidas */
 .metas-atingidas{
   display: flex;
@@ -398,10 +410,16 @@ section p{
   align-items: center;
 }
 
-/* Contato */
+/* Redes Sociais */
 
 .box{
   min-width: 350px;
+}
+
+/* Cursos */
+
+.cursos{
+  border: none;
 }
 
 /* Biografia */
