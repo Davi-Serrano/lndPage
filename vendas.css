@@ -5,19 +5,26 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
   }
-  body{
-    background-color: #424242;
-    color: white;
-  }
-  a{
-    color: black;
-    text-decoration: none;
-  }
-  
   html {
     height: 100%;
     width: 100%;
   }
+  body{
+    background-color: #272727;
+    color: white;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .yellow{
+    color: #F79007
+  }
+
+  .red{
+    color: #F50707;
+  }
+  
   h2{
     color: #E6A756;
     font-size: 55px;
@@ -34,13 +41,15 @@
   }
   
   header a:hover{
-    color: white;
+    opacity: 0.8;  
   }
   
   .h-direita{
     display: flex;
-    width: 40%;
     justify-content: space-around;
+    color: white;
+
+    width: 40%;
   }
 
 
@@ -52,7 +61,7 @@
     padding: 2em;
   }
 
-  section h2, h3, iframe, .btn-venda{
+  section h3, iframe, .btn-venda{
     padding: 1em;
   }
 
@@ -113,15 +122,15 @@
   width: 80%;;
   }
 
-  .mtd-vendas h3{
+  .mtd-vendas h4{
     font-size: 40px;
     text-decoration: underline 4px #f79007;
+    color: #F79007;
     
-    padding-top: 3em ;
   }
 
   .mtd-vendas ul{
-    border: 3px dashed gray;
+    border: 5px dashed gray;
     margin: 2em auto;
     padding: .5em 8em;
     width: 100%;
@@ -141,8 +150,9 @@
 }
 
 .obj-de-venda .titulo-amarelo{
-  font-size: 32px;
   text-align: center;
+  font-size: 32px;
+  text-decoration: underline #F79007;
   padding: 2em;
 }
 
@@ -214,7 +224,7 @@
   margin: 6em auto;
   padding: 2em;
   
-  border: 2px dashed #E6A756 ;
+  border: 1px dashed #f79007 ;
   border-radius: 14px;
 }
 
@@ -247,7 +257,8 @@
 }
 
 .layout-de-compra .btn-compra{
-  background-color: #f79007;
+  background: linear-gradient(to  right,  #F79007 60% ,red);
+
   text-align: center;
   font-size: 25px;
   
@@ -298,7 +309,6 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
   padding: 2em;
   color: white;
 }
