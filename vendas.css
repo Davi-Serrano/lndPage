@@ -15,6 +15,10 @@
   }
   a{
     text-decoration: none;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: 500;
+
     color: white;
   }
   .yellow{
@@ -33,10 +37,10 @@
   
   header{
     display: flex;
-    font-size: 15px;
+    font-size: 14px;
     justify-content: space-between;
     align-items: center;
-    padding: 3em 5em;
+    padding: 2em 5em;
     border-bottom: 1px solid white;
   }
   
@@ -47,6 +51,7 @@
   .h-direita{
     display: flex;
     justify-content: space-around;
+    
     color: white;
 
     width: 40%;
@@ -58,20 +63,35 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center ;
+
     padding: 2em;
   }
 
   section h3, iframe, .btn-venda{
     padding: 1em;
+    font-size: 20px;
+    font-family: "Poppins";
+    font-weight: 500;
+
+  }
+  section img{
+    margin-bottom: 2em;
   }
 
   .btn-venda{
-    
-    background-color: #d35003;
-    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    padding: 1em;
-    margin-top: 1em;
+    background-color: #d35003;
+    
+    font-weight: bold;
+    font-size: 22px;
+
+    width: 460px;
+    height: 62px;
+
+    margin-top: 3em;
 
     transition: 1s;
   }
@@ -99,9 +119,14 @@
 
   article h2{
     color: white;
+    
+    font-family: 'Open Sans';
+    font-size: 42px;
     font-weight: 100;
-  }
+    
 
+    padding-bottom: 1em;
+  }
   .apresenta{
     display: flex;
     justify-content: space-around;
@@ -111,10 +136,24 @@
 
   .apresenta .text{
     text-align: left;
-    line-height: 2em;
-    font-size: 13px;
+    line-height: 1.7em;
+
+    font-family: 'Poppins';
+    font-size: 12px;
+    
     margin-left: 2em ;
   }
+
+  article h4:first-child{
+    font-size: 20px;
+    font-family: 'Open Sans';
+    padding-bottom: 2em;
+    text-decoration: none;
+  }
+
+  
+
+  
 /* Metodo de Vendas */
   .mtd-vendas{
    margin: auto;
@@ -122,23 +161,35 @@
   width: 80%;;
   }
 
-  .mtd-vendas h4{
-    font-size: 40px;
+  .mtd-vendas h3, h4{
+    font-size: 42px;
     text-decoration: underline 4px #f79007;
+    
+  }
+
+  .mtd-vendas h4{
+    font-family: "Cabin Condensed";
+    font-weight: 300;
     color: #F79007;
     
   }
 
   .mtd-vendas ul{
-    border: 5px dashed gray;
-    margin: 2em auto;
-    padding: .5em 8em;
-    width: 100%;
     text-align: left;
+   
+    border: 5px dashed gray;
+   
+    width: 100%;
+   
+    padding: .5em 3em;
+    margin: 2em auto;
   }
 
   li{
     list-style: none;
+    
+    font-weight: 300;
+    
     padding: .5em;
   }
 
@@ -146,13 +197,18 @@
 
 .obj-de-venda{
   width: 80%;
+ 
   margin: auto;
 }
 
 .obj-de-venda .titulo-amarelo{
   text-align: center;
-  font-size: 32px;
+ 
+  font-family: "Cabin Condensed";
+  font-weight: 300;
+  font-size: 42px;
   text-decoration: underline #F79007;
+  
   padding: 2em;
 }
 
@@ -160,23 +216,28 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+   
+    border: 1px solid yellow;
+    
     width: 80%;
   
     margin: auto;
-    border: 1px solid yellow;
 }
 
 .box{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  padding: 1em;
-
+ 
   border: 1px solid red;
+ 
+  width: 50%;
+ 
+  padding: 1em;
 }
 .carrosel{
   text-align: center;
+ 
   padding: 3em 0;
 }
 /* Beneficios */
@@ -185,25 +246,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  margin: auto;
+ 
   text-align: left;
+ 
+  width: 80%;
+ 
+  margin: auto;
 }
 
 .beneficios h3{
   text-align: center;
 
+  font-family: "Cabin Condensed";
+  font-weight: 300;
   font-size: 42px;
-  font-weight: 100;
+
   color: #F79007;
 }
 .beneficios ul{
   width: 60%;
 }
 .beneficios ul li{
-  padding: 13px 0;
-
   border-bottom: 2px solid #F79007;
+  
+  padding: 13px 0;
+}
+
+.beneficios ul li span{
+  padding-right: 2em;
 }
 
 .beneficios ul li:last-child{
@@ -219,16 +289,17 @@
   justify-content: center;
   align-items: center;
   
+  border: 1px dashed #f79007 ;
+  border-radius: 14px;
+  
   width: 90%;
 
   margin: 6em auto;
   padding: 2em;
-  
-  border: 1px dashed #f79007 ;
-  border-radius: 14px;
 }
 
 .layout-de-compra h2{
+  font-family: "Poppins";
   font-size: 36px;
   color: white;
 }
@@ -237,9 +308,10 @@
 }
 
 .layout-de-compra .preco-anterior{
-  opacity: .8;
   font-size: 20px;
   text-decoration: line-through solid white;
+  
+  opacity: .8;
 }
 
 .layout-de-compra .preco-parcela{
@@ -257,10 +329,10 @@
 }
 
 .layout-de-compra .btn-compra{
-  background: linear-gradient(to  right,  #F79007 60% ,red);
-
   text-align: center;
   font-size: 25px;
+  
+  background: linear-gradient(to  right,  #F79007 60% ,red);
   
   max-width: 500px;
   min-width: 450px;
@@ -289,26 +361,31 @@
   display: flex;
   justify-content: space-around;
   align-items: initial;
+ 
   width: 80%;
 
   margin: 2em auto;
 }
 
 .garantia .texto-garantia{
-  width: 60%;
-  line-height: 2em;
   text-align: center;
+  line-height: 2em;
+  
+  width: 60%;
 
 }
 
 .garantia .texto-garantia p{
   padding: 1em 0;
+  font-weight: 300;
 }
 
 footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em;
+ 
   color: white;
+ 
+  padding: 2em;
 }
