@@ -217,7 +217,6 @@
     flex-wrap: wrap;
     align-items: center;
    
-    border: 1px solid yellow;
     
     width: 80%;
   
@@ -226,11 +225,12 @@
 
 .box{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
  
-  border: 1px solid red;
- 
+  font-weight: 200;
+
   width: 50%;
  
   padding: 1em;
