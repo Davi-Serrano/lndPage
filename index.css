@@ -39,9 +39,33 @@ header{
   justify-content: space-around;
 }
 
-.h-direita a:hover{
-  color: white;
+.h-direita a{
+  position: relative;
+
+  transition: .5s ease;
 }
+
+.h-direita a:hover{
+  color: #ffffff;
+}
+
+.h-direita a:hover::after{
+  width: 100%;
+}
+
+.h-direita a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 208;
+    width: 0%;
+    height: 2px;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    background: #ffffff;
+}
+
 
 main{
   display: flex;
