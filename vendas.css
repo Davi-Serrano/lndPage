@@ -44,9 +44,6 @@ header{
   border-bottom: 1px solid white;
 }
 
-header a:hover{
-  opacity: 0.8;  
-}
 
 .h-direita{
   display: flex;
@@ -55,6 +52,26 @@ header a:hover{
   color: white;
 
   width: 40%;
+}
+
+.h-direita a{
+  position: relative;
+}
+
+.h-direita a::after{
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  transition: ease 0.5s;
+}
+
+.h-direita a:hover::after{
+ width: 100%;
 }
 
 
@@ -331,8 +348,11 @@ li{
 
   padding: .5em;
 }
+.layout-de-compra a{
+  font-size: 25px;
+}
 
-.layout-de-compra .btn-compra{
+.layout-de-compra .btn-compra {
   text-align: center;
   font-size: 25px;
 
