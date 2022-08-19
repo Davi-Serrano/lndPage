@@ -229,11 +229,15 @@ li{
   justify-content: center;
   align-items: center;
 
-  font-weight: 200;
+  font-weight: 300;
 
-  width: 50%;
+  width: 100%;
 
   padding: 1em;
+}
+
+.box p{
+  font-size: 12px;
 }
 .carrosel{
   text-align: center;
@@ -402,11 +406,11 @@ padding: 2em;
     padding: .2em;
   }
   .btn-venda{
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 300px;
+    max-width: 300px;
 
-    font-size: 18px;
-    padding: 0 1em;
+    font-size: 15px;
+    padding: 0 ;
   }
   
 
@@ -416,6 +420,18 @@ padding: 2em;
   /* Artigo */
   article img{
     display: none;
+  }
+
+  article h2{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .apresenta .text{
+    text-align: justify;
+
+    padding: 0;
+    margin: 0;
   }
 
   .obj-de-venda .titulo-amarelo{
