@@ -3,473 +3,419 @@
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
-
 html {
   height: 100%;
   width: 100%;
 }
+body{
+  background-color: #272727;
+  color: white;
+}
 a{
   text-decoration: none;
-  color: black;
-}
-h1{
-  color: #E6A756;
-  font-size: 54px;
-  font-weight: 100;
-  font-family: 'Marcellus SC';
-}
-.container{
-  background: linear-gradient(to top left, black, #8B0000, black);
-  padding-bottom: 3em;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 500;
 
+  color: white;
+}
+.yellow{
+  color: #F79007
+}
+
+.red{
+  color: #F50707;
+}
+
+h2{
+  color: #E6A756;
+  font-size: 55px;
+  font-family: 'Marcellus';
 }
 
 header{
   display: flex;
-  font-size: 15px;
+  font-size: 14px;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 5em;
+  padding: 2em 5em;
+  border-bottom: 1px solid white;
+}
+
+header a:hover{
+  opacity: 0.8;  
 }
 
 .h-direita{
   display: flex;
-  width: 40%;
   justify-content: space-around;
-}
-
-.h-direita a:hover{
+  
   color: white;
+
+  width: 40%;
 }
 
-main{
-  display: flex;
-  justify-content: center;
-  padding: 0 4em;
-  align-items: center;
- 
-  width: 100%;
-}
 
-.titulo{
-text-align: center; 
-max-width: 40%;
-}
-
-.titulo h1{
-  text-align: right;
-}
-
-.titulo p{
-   font-size: 25px;
-   padding: 1em 0;
-   color: white;
-}
-
-.titulo .btns-box{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  margin: auto;
-
-  min-width: 400px;
-  max-width: 400px;
-}
-
-.btns{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  background: linear-gradient(to bottom right, black , #800000, red);
-  border-radius: 32px;
-  
-  font-size: 15px;
-  font-weight: bold;    
-  color: #E6A756;
-  
-  min-width: 120px;
-  max-width: 120px;
-  height: 44px;
-  
- 
-  padding: 0.5em;
-  margin: 20px;
-}
-.btns:hover{
-  transform: scale(1.1);
-}
-
-/*Sobre*/
 section{
-  background: radial-gradient(#8B0000, black);
-
-  padding-top: 2em;
-
-}
-
-.sobre-txt h2{
-  font-family: 'Open Sans';
-  font-weight: 100;
-}
-
-section p{
-  font-size: 16px;
-  color: white;
-  text-align: center;
-
-  padding: 2em 8em;
-
-}
-
-.sobre-txt{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-vendas{
-  display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 1em 0;
-}
+  align-items: center ;
 
-.img-vendas img{
   padding: 2em;
 }
 
-/* metas atingidas */
-.metas-atingidas{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  
-  background: linear-gradient(to bottom, black, #8B0000);
-  
-  padding: 4em 0;
+section h3, iframe, .btn-venda{
+  padding: 1em;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 500;
+
 }
-.metas-atingidas h3{
-  font-size: 40px;
-  font-family: "Arima Madurai";
-  font-weight: 100;
-  color: #6D604E;
-  
-  padding: .3em;
+section img{
+  margin-bottom: 2em;
 }
 
-.img-vendas{
+.btn-venda{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* Redes Socias */
-.box-redes-sociais{
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
-  background: linear-gradient(black, rgb(75, 68, 68), black);
-
+  background-color: #d35003;
   
-  padding: 2em 0;
+  font-weight: bold;
+  font-size: 22px;
+
+  width: 460px;
+  height: 62px;
+
+  margin-top: 3em;
+
+  transition: 1s;
+}
+
+.btn-venda:hover{
+  cursor: pointer;
+  background-color: greenyellow;
+}
+
+section h3{
+    padding: 0 4em;
+    text-align: center;
+}
+/* Apresentação */
+
+article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+
+  padding: 2em;
+}
+
+article h2{
+  color: white;
+  
+  font-family: 'Open Sans';
+  font-size: 42px;
+  font-weight: 100;
+  
+
+  padding-bottom: 1em;
+}
+.apresenta{
+  display: flex;
+  justify-content: space-around;
+  align-items: center ;
+  width: 80%;
+} 
+
+.apresenta .text{
+  text-align: left;
+  line-height: 1.7em;
+
+  font-family: 'Poppins';
+  font-size: 12px;
+  
+  margin-left: 2em ;
+}
+
+article h4:first-child{
+  font-size: 20px;
+  font-family: 'Open Sans';
+  padding-bottom: 2em;
+  text-decoration: none;
+}
+
+
+
+
+/* Metodo de Vendas */
+.mtd-vendas{
+ margin: auto;
+text-align: center;
+width: 80%;;
+}
+
+.mtd-vendas h3, h4{
+  font-size: 42px;
+  text-decoration: underline 4px #f79007;
+  
+}
+
+.mtd-vendas h4{
+  font-family: "Cabin Condensed";
+  font-weight: 300;
+  color: #F79007;
+  
+}
+
+.mtd-vendas ul{
+  text-align: left;
+ 
+  border: 5px dashed gray;
+ 
+  width: 100%;
+ 
+  padding: .5em 3em;
+  margin: 2em auto;
+}
+
+li{
+  list-style: none;
+  
+  font-weight: 300;
+  
+  padding: .5em;
+}
+
+/* Pra quem é esse metodos de vendas */
+
+.obj-de-venda{
+width: 80%;
+
+margin: auto;
+}
+
+.obj-de-venda .titulo-amarelo{
+text-align: center;
+
+font-family: "Cabin Condensed";
+font-weight: 300;
+font-size: 42px;
+text-decoration: underline #F79007;
+
+padding: 2em;
+}
+
+.box-icons{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+ 
+  
+  width: 80%;
+
+  margin: auto;
 }
 
 .box{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
-  background: radial-gradient(#8B0000, black);
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-  
-  min-width: 400px;
-  height: 250px;
-  
-  margin-top: 2em;
-  
-  border: 2px solid white;
+font-weight: 200;
+
+width: 50%;
+
+padding: 1em;
+}
+.carrosel{
+text-align: center;
+
+padding: 3em 0;
+}
+/* Beneficios */
+.beneficios{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+text-align: left;
+
+width: 80%;
+
+margin: auto;
 }
 
-.box:hover{
-  cursor: pointer;
-  opacity: 0.8;
+.beneficios h3{
+text-align: center;
+
+font-family: "Cabin Condensed";
+font-weight: 300;
+font-size: 42px;
+
+color: #F79007;
+}
+.beneficios ul{
+width: 60%;
+}
+.beneficios ul li{
+border-bottom: 2px solid #F79007;
+
+padding: 13px 0;
 }
 
-/* Cursos */
-
-.cursos-box-background{
-  background: linear-gradient(to top left, black, #8B0000, black);
-  padding: 4em 0;
-
-}
-.cursos-box-background .title{
-  font-family: "Open Sans";
-  font-size: 42px;
-  color: #B6B6B6;
-  text-align: center;
-  
-  padding-bottom: 1.5em;
-}
-.cursos-box{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.cursos{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #222222;
-  margin: 0 1em;
-  padding: 0.5em;
+.beneficios ul li span{
+padding-right: 2em;
 }
 
-.btn-cursos{
-  background-color: #F79007;
-  font-family: 'Open Sans';
-  font-size: 12px;
-  padding: 1em 2em;
-  margin: 2em 0;
-  border-radius: 16px;
-  text-align: center;
+.beneficios ul li:last-child{
+border: none;
 }
 
-.btn-cursos:hover{
-  cursor: pointer;
-  opacity: 0.8;
+
+/* Compra */
+
+.layout-de-compra{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+border: 1px dashed #f79007 ;
+border-radius: 14px;
+
+width: 90%;
+
+margin: 6em auto;
+padding: 2em;
 }
 
-/* Biografia */
-
-.biografia-background{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3em;
-  background: linear-gradient( to left, pink 40%, red, #8b0000);
-  padding: 3em 0;
+.layout-de-compra h2{
+font-family: "Poppins";
+font-size: 36px;
+color: white;
+}
+.layout-de-compra p{
+padding: .5em;
 }
 
-.biografia{
-  width: 500px;
-  background-color: #ffffff;
-  padding: 100px;
-  font-size: 15px;
+.layout-de-compra .preco-anterior{
+font-size: 20px;
+text-decoration: line-through solid white;
+
+opacity: .8;
 }
 
-.biografia h4{
-  font-size: 38px;
-  font-weight: 100;
-  padding: 25px;
-  
-}
-.biografia p:first-child{
-  font-weight: bold;
-  font-size: 28px;
-}
-.biografia a{
-  font-weight: bold;
-  color: #6D604E;
+.layout-de-compra .preco-parcela{
+font-size: 20px;
+font-weight: 100;
+
+padding-top: 0;
 }
 
-.biografia p{
-  padding: 25px;
-  line-height: 2em;
+.layout-de-compra .preco-atual{
+font-size: 45px;
+color: #f79007;
+
+padding: .5em;
 }
 
-.biografia a:hover{
-  cursor: pointer;
-  color: #800000
+.layout-de-compra .btn-compra{
+text-align: center;
+font-size: 25px;
+
+background: linear-gradient(to  right,  #F79007 60% ,red);
+
+max-width: 500px;
+
+padding: 1em;
+margin-top: 1em;
 }
 
-.rect-white{
-  background-color: #ffffff;
+.layout-de-compra .btn-compra:hover{
+cursor: pointer;
 
-  height: 150px;
-  width: 100%;
+opacity: .8;
+}
+.layout-de-compra .preco-avista{
+font-size: 22px;
+
+}
+
+.layout-de-compra p:last-child{
+padding: 1em;
+opacity: .8;
+}
+
+/* Garantia */
+.garantia{
+display: flex;
+justify-content: space-around;
+align-items: initial;
+
+width: 80%;
+
+margin: 2em auto;
+}
+
+.garantia .texto-garantia{
+text-align: center;
+line-height: 2em;
+
+width: 60%;
+
+}
+
+.garantia .texto-garantia p{
+padding: 1em 0;
+font-weight: 300;
 }
 
 footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  padding: 2em;
-  color: white;
-  text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+
+color: white;
+
+padding: 2em;
 }
 
 
-@media (max-width: 950px){
-
- header{
-  justify-content: center;
- }
-  .h-direita{
+@media (max-width: 900px) {
+    .h-direita{
       display: none;
-  }
+    }
 
-  main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    width: 100%;
-    height:auto;
-    text-align: center;
+    .btn-venda{
+      width: 350px;
+      font-size: 20px;
+    }
 
-  }
-  
-  .titulo{
-    padding: 0;
-    max-width: 100%;
-  }
-  
-.titulo h1{
-  text-align: center;  }
-  
-  .titulo p{
-     font-size: 20px;
-  }
+    article img
+      {display: none ;
+    }
 
-  .titulo .btns-box{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  
-    margin: auto;
-  
-    min-width: 350px;
-    max-width: 350px;
-  }
-  
 
-  .btns a{
-   
-    padding: 0.5em 0;
-    margin: 0;
-  }
-  
- 
-  main img{
-    width: 90%;
-    height: auto;
-  }
+
+    /* Compra */
+    .btn-compra{
+      min-width: 300px;
+      max-width: 300px;
+
+      font-size: 20px;
+    }
+
     
-/* Sobre */
-
-section p{
-  padding: 1em;
-  font-size: 14px;
-  line-height: 1.8em;
-
-}
-
-.sobre-txt{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Metas atinigidas */
-
-.metas-atingidas{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 8em;
-  background-color: #8B0000;
-}
-.metas-atingidas h3{
-  font-size: 40px;
-  padding: .3em;
-  font-family: "Arima Madurai";
-  color: #6D604E;
-  font-weight: 100;
-}
-
-.img-vendas{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* Redes Sociais */
-
-.box{
-  min-width: 350px;
-}
-
-/* Cursos */
-
-.cursos{
-  border: none;
-}
-
-/* Biografia */
-.biografia-background{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3em;
-  padding-bottom: 0;
-
-}
-
-
-
-.biografia-background img{
-  margin-bottom: -255px;
-  z-index: 9;
-  width: 300px;
-}
-
-.biografia{
-  width: 100%;
-  background-color: #ffffff;
-  padding: 300px 0px;
-  font-size: 15px;
-}
-
-.biografia h4{
-  margin-top: 2em;
-  font-size: 38px;
-  font-weight: 100;
-  padding: 25px;
+    .beneficios{
+      width: 100%;
+    }
   
-}
-.biografia p:first-child{
-  font-weight: bold;
-  font-size: 28px;
-}
-
-.biografia p{
-  padding: 25px;
-  line-height: 2em;
-}
-
-.biografia a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 }
