@@ -433,7 +433,10 @@ padding: 2em;
   }
   
   article img{
-    width: 200px;
+    width: 300px;
+    height: 450px;
+
+    margin-bottom: 2em;
   }
 
   .mtd-vendas h3{

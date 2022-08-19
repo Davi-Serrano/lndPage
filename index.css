@@ -247,6 +247,10 @@ section p{
   padding: 0.5em;
 }
 
+.cursos a{
+  color: black;
+}
+
 .btn-cursos{
   background-color: #F79007;
   font-family: 'Open Sans';
