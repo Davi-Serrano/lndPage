@@ -248,14 +248,12 @@ li{
 
   font-weight: 300;
 
-  width: 100%;
+  width: 50%;
 
   padding: 1em;
 }
 
-.box p{
-  font-size: 12px;
-}
+
 
 .carrossel{
   display: flex;
@@ -267,7 +265,7 @@ li{
 .box-carrossel{
   position: relative;
   width: 200px;
-  height: 200px;
+  height: 300px;
   transform-style: preserve-3d;
 
   animation: animate 60s linear infinite;
@@ -467,7 +465,7 @@ padding: 2em;
     display: none;
   }
 
-  /* sESSÃO */
+  /* Sessão */
   section{
     padding: .5em 0;
   }
@@ -535,6 +533,9 @@ padding: 2em;
     padding: 0;
   }
 
+  .box p{
+    font-size: 12px;
+  }
 
 /* Compra */
   .layout-de-compra .btn-compra{
