@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./vendas.css"/>
 
-    <script src="./index.js">
-        dsahndkasbab
-    </script>
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,21 +17,64 @@
 </head>
 
 <script >
+
+    var imgs = document.querySelectorAll(".img")
+    var convertedimgs = Array.from(imgs)
+    var currentCenterImage = 1
+    const AOfImagens = ["./imagens/compact/biografia.webp",
+                        "./imagens/compact/vendaspe.webp",
+                        "./imagens/compact/celular-shopee.webp"]
+
+function btnleftpress(){
+
+    currentCenterImage ++
+
+    if( currentCenterImage === 3){
+        currentCenterImage = 0
+    }
+
+    var first = currentCenterImage - 1
+    var third = currentCenterImage + 1
     
-    function esq(){
-        const imgs = document.getElementsByClassName("img")
-        const convertedimgs = Array(imgs)
-
-       for (let index = 0; index < convertedimgs.length; index++) {
-        console.log(typeof imgs )
-     
-       }
+    if(third === 3){
+        third = 0
     }
 
-    function dirs(){
-        alert("direita")
+    if(first < 0){
+        first = 2
+    }
+    
+        console.log( first,  currentCenterImage  , third )
+
+        // console.log( AOfImagens[first],  AOfImagens[currentCenterImage]  ,AOfImagens[third] )
+        
     }
 
+
+function dirs(){
+    currentCenterImage --
+
+    if( currentCenterImage === -1){
+        currentCenterImage = 2
+    }
+
+    var first = currentCenterImage - 1
+    
+    if(first === -1){
+        first = 2
+    }
+
+    var third  = currentCenterImage + 1
+
+    if(third === 3){
+        third = 0
+    }
+    
+        console.log(   first, currentCenterImage, third   )
+
+        // console.log( AOfImagens[first],  AOfImagens[currentCenterImage]  ,AOfImagens[third] )
+        
+    }
 
 </script>
 <body>
@@ -193,12 +232,12 @@
 
     <div class="box-carrossel">
 
-        <div class="setaE" id="seta-esquerda" onclick="esq()"><=</div>
+        <div class="setaE" id="seta-esquerda" onclick="btnleftpress()"><=</div>
 
         <div class="carrossel">
-            <div class="img" > 1</div>
-            <div class="img" > 2</div>
-            <div class="img" > 3</div>    
+            <div class="img first-img" > <img src="./imagens/compact/biografia.webp" /> </div>
+            <div class="img second-img" > <img src="./imagens/compact/vendaspe.webp" /></div>
+            <div class="img third-img" > <img src="./imagens/compact/celular-shopee.webp" /></div>    
         </div>
         
         <div class="setaD" onclick="dirs()"> =></div>
