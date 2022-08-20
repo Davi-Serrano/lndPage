@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./vendas.css"/>
 
+    <script src="./index.js">
+        dsahndkasbab
+    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +19,25 @@
 
     <title>Thainá Niely</title>
 </head>
+
+<script >
+    
+    function esq(){
+        const imgs = document.getElementsByClassName("img")
+        const convertedimgs = Array(imgs)
+
+       for (let index = 0; index < convertedimgs.length; index++) {
+        console.log(typeof imgs )
+     
+       }
+    }
+
+    function dirs(){
+        alert("direita")
+    }
+
+
+</script>
 <body>
     <header>
         <svg width="70" height="70" viewBox="0 0 213 204" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -168,12 +190,19 @@
         </div>
     </div>
 
-    <div class="carrosel">
-        <h1>
-            Aqui vai o carrosel
-        </h1>
-    </div>
+
+    <div class="box-carrossel">
+
+        <div class="setaE" id="seta-esquerda" onclick="esq()"><=</div>
+
+        <div class="carrossel">
+            <div class="img" > 1</div>
+            <div class="img" > 2</div>
+            <div class="img" > 3</div>    
+        </div>
         
+        <div class="setaD" onclick="dirs()"> =></div>
+    </div>
 
     <div class="beneficios">
         <h3>Voce tera acesso á:</h3>

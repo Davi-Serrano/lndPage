@@ -256,11 +256,51 @@ li{
 .box p{
   font-size: 12px;
 }
-.carrosel{
-  text-align: center;
 
-  padding: 3em 0;
+.box-carrossel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid yellow;
+
 }
+
+.carrossel{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 80%;
+  height: 650px;
+
+
+  border: 1px solid red;
+}
+
+.img{
+  border: 1px solid red;
+
+  width: 312px;
+  height: 446px;
+
+}
+
+.img:first-child{
+  background-color: red;
+
+  transform: skewY(-20deg);
+  width: 280px;
+}
+
+.img:last-child{
+  background-color: yellow;
+
+  transform: skewY(20deg);
+  width: 280px;
+
+}
+
 /* Beneficios */
 .beneficios{
   display: flex;
