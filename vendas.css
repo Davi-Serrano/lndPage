@@ -257,54 +257,59 @@ li{
   font-size: 12px;
 }
 
-.box-carrossel{
+.carrossel{
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border: 2px solid yellow;
+  min-height: 100vh;
+}
+.box-carrossel{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
 
+  animation: animate 60s linear infinite;
 }
 
-.carrossel{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+@keyframes animate {
+  0%{
+    transform: perspective(1000px) rotateY(0deg);
+  }
 
-  width: 80%;
-  height: 650px;
-
-
-  border: 1px solid red;
+  100%{
+    transform: perspective(1000px) rotateY(360deg);
+  }
 }
 
-.carrossel img{
+
+
+.box-carrossel span{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) *45deg )) translateZ(400px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent,transparent, #0004);
 }
 
-.img {
-  border: 1px solid red;
-
-  width: 312px;
-  height: 446px;
-
+.box-carrossel span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+ 
 
-.first-img{
-  background-color: red;
 
-  transform: skewY(-20deg);
-  width: 280px;
-}
 
-.third-img{
-  background-color: yellow;
 
-  transform: skewY(20deg);
-  width: 280px;
-
-}
 
 /* Beneficios */
 .beneficios{

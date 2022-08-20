@@ -18,63 +18,6 @@
 
 <script >
 
-    var imgs = document.querySelectorAll(".img")
-    var convertedimgs = Array.from(imgs)
-    var currentCenterImage = 1
-    const AOfImagens = ["./imagens/compact/biografia.webp",
-                        "./imagens/compact/vendaspe.webp",
-                        "./imagens/compact/celular-shopee.webp"]
-
-function btnleftpress(){
-
-    currentCenterImage ++
-
-    if( currentCenterImage === 3){
-        currentCenterImage = 0
-    }
-
-    var first = currentCenterImage - 1
-    var third = currentCenterImage + 1
-    
-    if(third === 3){
-        third = 0
-    }
-
-    if(first < 0){
-        first = 2
-    }
-    
-        console.log( first,  currentCenterImage  , third )
-
-        // console.log( AOfImagens[first],  AOfImagens[currentCenterImage]  ,AOfImagens[third] )
-        
-    }
-
-
-function dirs(){
-    currentCenterImage --
-
-    if( currentCenterImage === -1){
-        currentCenterImage = 2
-    }
-
-    var first = currentCenterImage - 1
-    
-    if(first === -1){
-        first = 2
-    }
-
-    var third  = currentCenterImage + 1
-
-    if(third === 3){
-        third = 0
-    }
-    
-        console.log(   first, currentCenterImage, third   )
-
-        // console.log( AOfImagens[first],  AOfImagens[currentCenterImage]  ,AOfImagens[third] )
-        
-    }
 
 </script>
 <body>
@@ -229,19 +172,19 @@ function dirs(){
         </div>
     </div>
 
+<div class="carrossel">
 
     <div class="box-carrossel">
-
-        <div class="setaE" id="seta-esquerda" onclick="btnleftpress()"><=</div>
-
-        <div class="carrossel">
-            <div class="img first-img" > <img src="./imagens/compact/biografia.webp" /> </div>
-            <div class="img second-img" > <img src="./imagens/compact/vendaspe.webp" /></div>
-            <div class="img third-img" > <img src="./imagens/compact/celular-shopee.webp" /></div>    
-        </div>
-        
-        <div class="setaD" onclick="dirs()"> =></div>
+        <span style="--i:1;"><img src="./imagens/vendas/maisvendasshopee.webp" > </span>
+        <span style="--i:2;"><img src="./imagens/vendas/maisvendasshopee.webp" > </span>
+        <span style="--i:3;"><img src="./imagens/vendas/maisvendasshopee.webp" > </span>
+        <span style="--i:4;"><img src="./imagens/vendas/maisvendasshopee.webp" > </span>
+        <span style="--i:5;"><img src="./imagens/vendas/maisvendasshopee.webp" > </span>
+        <span style="--i:6;"><img src="./imagens/vendas/maisvendasshopee.webp"  > </span>
+        <span style="--i:7;"><img src="./imagens/vendas/maisvendasshopee.webp" > </span>
+        <span style="--i:8;"><img src="./imagens/vendas/maisvendasshopee.webp" > </span>
     </div>
+</div>
 
     <div class="beneficios">
         <h3>Voce tera acesso á:</h3>
