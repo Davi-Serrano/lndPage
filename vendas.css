@@ -520,6 +520,14 @@ padding: 2em;
     
   }
 
+  /* Icones */
+  .box-icons{
+    justify-content: center; 
+  }
+
+ .box{
+  width: 60%;
+ }
   .beneficioss{
     width: 100%;
   }
