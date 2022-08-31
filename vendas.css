@@ -257,56 +257,47 @@ li{
 
 .carrossel{
   display: flex;
+  flex-direction: column;
+
   justify-content: center;
   align-items: center;
 
-  min-height: 100vh;
+  position: relative;
+
 }
 .box-carrossel{
-  position: relative;
-  width: 250px;
-  height: 300px;
-  transform-style: preserve-3d;
+  max-width: 90vw;
+  margin: 2em auto;
 
-  animation: animate 60s linear infinite;
 }
 
-@keyframes animate {
-  0%{
-    transform: perspective(1000px) rotateY(0deg);
-  }
-
-  100%{
-    transform: perspective(1000px) rotateY(360deg);
-  }
+.item{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
 
+button{
+  background: none;
+  border: none;
+  box-shadow: none;
+}
 
-.box-carrossel span{
+.btn-box{
+  display: flex;
+  justify-content: space-between;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) *45deg )) translateZ(400px);
-  -webkit-box-reflect: below 0px linear-gradient(transparent,transparent, #0004);
+  width: 90vw;
+  left: 4%;
 }
 
-.box-carrossel span img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.prev, .next{
+  font-size:45px;
+  color: #E6A756;
 }
- 
-
-
-
 
 
 /* Beneficios */
@@ -521,13 +512,15 @@ padding: 2em;
   }
 
   /* Icones */
+
   .box-icons{
-    justify-content: center; 
+    justify-content: center;
   }
 
- .box{
-  width: 60%;
- }
+  .box{
+    width: 60%;
+  }
+
   .beneficioss{
     width: 100%;
   }
@@ -544,6 +537,18 @@ padding: 2em;
   .box p{
     font-size: 12px;
   }
+  /* Carrosuel */
+
+
+.carrossel{
+  min-height: 50vh;
+}
+
+  .box-carrossel{     
+     max-width: 100vw;
+     height: auto;
+  }
+
 
 /* Compra */
   .layout-de-compra .btn-compra{
