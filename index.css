@@ -457,7 +457,8 @@ section p{
 .biografia-background img{
   margin-bottom: -255px;
   z-index: 9;
-  max-width: 100%;
+  width: 350px;
+  height: 459px;
 }
 
 .biografia{
