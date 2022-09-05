@@ -1,18 +1,21 @@
-html {
-  height: 100%;
-  width: 100%;
-  font: bold 40px helvetica, sans-serif;
-} 
-
 body{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  min-height: 100vh;
+  max-width: 100vw;
 
   background: linear-gradient(to bottom,  #7B0000, black) 
+
+}
+header{
+  display: flex;
+  font-size: 16px;
+}
+
+.box-icon{
+  padding: 0 1em;
 }
 
 .container {
@@ -28,15 +31,21 @@ a{
   text-decoration: none;
   color: black
 }
+p{
+  font-size: 14px;
+}
+
+.text{
+  padding: 1em;
+}
 
 .box{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 200px;
   font-size: 18px;
   background-color: #F79007;
-  padding: 1em;
 }
 
 .box:hover{
