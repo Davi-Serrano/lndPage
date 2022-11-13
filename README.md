@@ -1,4 +1,4 @@
-<h1>Landing Page/h1>
+<h1>Landing Page </h1>
 
 <h4>Descrição</h4>
 <p>Meu primeiro trabalho realizado como freelancer, é um site feito de acordo com as especificações do cliente.O site foi reconstruido pois apresentava problemas de perfomance na hora do carregamento.</p>
