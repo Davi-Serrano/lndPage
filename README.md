@@ -7,9 +7,9 @@
 
 ![Cbank gif](https://user-images.githubusercontent.com/82523921/166157471-4d0557b2-1af5-45c1-9a20-a9a6f70d6656.gif)
 
-<h4><a href="https://www.figma.com/community/file/1102387062509929655" target="_blank">Landing-Page</a></h4>
+<h4><a href="https://thaynaniely.netlify.app/" target="_blank">Landing-Page</a></h4>
 
-<h4><a href="https://www.figma.com/community/file/1102387062509929655" target="_blank">Cadstro de usuários</a></h4>
+<h4><a href="https://imersaoimperatrizempreendedora.vercel.app/" target="_blank">Cadstro de usuários</a></h4>
 
 <h3>
 <img alt="Icone de verficação" width="25px" src="https://w7.pngwing.com/pngs/628/269/png-transparent-check-mark-computer-icons-checkbox-others-angle-rectangle-logo.png"/>
