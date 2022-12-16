@@ -5,8 +5,6 @@
 
 <p>São três páginas estáticas feitas com HTML, CSS E JavaScript puros. E uma pagina de cadastramento aonde foi uitlzado o NextJS e o FaunaDB, um banco de dados NoSQL, online que se integra muito bem com o NextJS </p>
 
-![Cbank gif](https://user-images.githubusercontent.com/82523921/166157471-4d0557b2-1af5-45c1-9a20-a9a6f70d6656.gif)
-
 <h4><a href="https://thaynaniely.netlify.app/" target="_blank">Landing-Page</a></h4>
 
 <h4><a href="https://imersaoimperatrizempreendedora.vercel.app/" target="_blank">Cadstro de usuários</a></h4>
